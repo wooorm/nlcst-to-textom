@@ -1,0 +1,15 @@
+{
+  "name": "nlcst-to-textom",
+  "version": "0.0.1",
+  "description": "Transform an NLCST node into a TextOM node",
+  "license": "MIT",
+  "keywords": [
+    "nlcst",
+    "to",
+    "textom"
+  ],
+  "repository": "wooorm/nlcst-to-textom",
+  "scripts" : [
+    "index.js"
+  ]
+}

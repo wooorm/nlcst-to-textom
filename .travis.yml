@@ -1,0 +1,13 @@
+language: node_js
+script: npm run-script test-travis
+node_js:
+- '0.10'
+- '0.11'
+after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+deploy:
+  provider: npm
+  email: tituswormer@gmail.com
+  api_key:
+    secure: XahRGIPweaOekBFkL9wyUFiCbbz1QzY6Ng8dt4n4enHTt0yCkIbszRug+74pjhfkAZom5E9p+2a4YPPEmLpSdBu5kH5W6v9A/uZ+wl/4tyxgsV3qWF7s1PVw7IK6OA18XdfPEDN2igwNFnaW/aLSfP74J/xidsUgOiuvjBCCqGE=
+  on:
+    repo: wooorm/nlcst-to-textom
