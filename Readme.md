@@ -28,7 +28,7 @@ var TextOMConstructor,
     TextOM;
 
 TextOMConstructor = require('textom');
-nlcstToTextOM = require('nlcst-to-string');
+nlcstToTextOM = require('nlcst-to-textom');
 inspect = require('retext-inspect').attach;
 
 TextOM = new TextOMConstructor();
