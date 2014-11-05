@@ -55,13 +55,13 @@ describe('nlcstToTextOM(textom, nlcst)', function () {
         types.forEach(function (type) {
             if (TextOM[type].prototype.nodeName === 'Text') {
                 assert(nlcstToTextOM(TextOM, {
-                    'type' : type,
-                    'value' : 'test'
+                    'type': type,
+                    'value': 'test'
                 }).type === type);
             } else {
                 assert(nlcstToTextOM(TextOM, {
-                    'type' : type,
-                    'children' : []
+                    'type': type,
+                    'children': []
                 }).type === type);
             }
         });
@@ -74,19 +74,19 @@ describe('nlcstToTextOM(textom, nlcst)', function () {
             }
 
             assert(nlcstToTextOM(TextOM, {
-                'type' : type,
-                'children' : [
+                'type': type,
+                'children': [
                     {
-                        'type' : 'Text',
-                        'value' : 'AT'
+                        'type': 'Text',
+                        'value': 'AT'
                     },
                     {
-                        'type' : 'Text',
-                        'value' : '&'
+                        'type': 'Text',
+                        'value': '&'
                     },
                     {
-                        'type' : 'Text',
-                        'value' : 'T'
+                        'type': 'Text',
+                        'value': 'T'
                     }
                 ]
             }).length === 3);
@@ -100,8 +100,8 @@ describe('nlcstToTextOM(textom, nlcst)', function () {
             }
 
             assert(nlcstToTextOM(TextOM, {
-                'type' : type,
-                'value' : 'AT&T'
+                'type': type,
+                'value': 'AT&T'
             }).internalValue === 'AT&T');
         });
     });
@@ -110,11 +110,11 @@ describe('nlcstToTextOM(textom, nlcst)', function () {
         var result;
 
         result = nlcstToTextOM(TextOM, {
-            'type' : 'TextNode',
-            'value' : 'nodes',
-            'data' : {
-                'partOfSpeech' : 'NN',
-                'stem' : 'node'
+            'type': 'TextNode',
+            'value': 'nodes',
+            'data': {
+                'partOfSpeech': 'NN',
+                'stem': 'node'
             }
         });
 
@@ -130,9 +130,9 @@ describe('nlcstToTextOM(textom, nlcst)', function () {
         Data.prototype.test = 'test';
 
         result = nlcstToTextOM(TextOM, {
-            'type' : 'TextNode',
-            'value' : 'nodes',
-            'data' : new Data()
+            'type': 'TextNode',
+            'value': 'nodes',
+            'data': new Data()
         });
 
         assert(!('test' in result.data));
