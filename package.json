@@ -1,6 +1,6 @@
 {
   "name": "nlcst-to-textom",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Transform an NLCST node into a TextOM node",
   "license": "MIT",
   "keywords": [
