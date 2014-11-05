@@ -1,4 +1,4 @@
-# nlcst-to-textom [![Build Status](https://img.shields.io/travis/wooorm/nlcst-to-textom.svg)](https://travis-ci.org/wooorm/nlcst-to-textom) [![Coverage Status](https://img.shields.io/coveralls/wooorm/nlcst-to-textom.svg)](https://coveralls.io/r/wooorm/nlcst-to-textom?branch=master)
+# nlcst-to-textom [![Build Status](https://img.shields.io/travis/wooorm/nlcst-to-textom.svg?style=flat)](https://travis-ci.org/wooorm/nlcst-to-textom) [![Coverage Status](https://img.shields.io/coveralls/wooorm/nlcst-to-textom.svg?style=flat)](https://coveralls.io/r/wooorm/nlcst-to-textom?branch=master)
 
 Transform an [NLCST](https://github.com/wooorm/nlcst) node into a [TextOM](https://github.com/wooorm/textom) node.
 
