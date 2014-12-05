@@ -29,13 +29,13 @@ var TextOMConstructor,
 
 TextOMConstructor = require('textom');
 nlcstToTextOM = require('nlcst-to-textom');
-inspect = require('retext-inspect').attach;
+inspect = require('retext-inspect');
 
 TextOM = new TextOMConstructor();
 
 inspect({
-  'TextOM' : TextOM
-});
+    'TextOM' : TextOM
+}, {});
 
 console.log(nlcstToTextOM(TextOM, {
   "type": "WordNode",
@@ -52,12 +52,7 @@ console.log(nlcstToTextOM(TextOM, {
     },
     {
       "type": "PunctuationNode",
-      "children": [
-        {
-          "type": "TextNode",
-          "value": "&"
-        }
-      ]
+      "value": "&"
     },
     {
       "type": "TextNode",
@@ -66,10 +61,9 @@ console.log(nlcstToTextOM(TextOM, {
   ]
 }));
 /**
- * WordNode[3]
+ * WordNode[3] [data={"partOfSpeech":["NNP","NN"]}]
  * ├─ TextNode: 'AT'
- * ├─ PunctuationNode[1]
- * │  └─ TextNode: '&'
+ * ├─ PunctuationNode: '&'
  * └─ TextNode: 'T'
  */
 ````
