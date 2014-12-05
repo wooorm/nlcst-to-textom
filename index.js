@@ -22,6 +22,7 @@ function nlcstToTextOM(TextOM, nlcst) {
     var index,
         node,
         children,
+        nodes,
         data,
         attribute;
 
@@ -30,10 +31,13 @@ function nlcstToTextOM(TextOM, nlcst) {
     if (has.call(nlcst, 'children')) {
         index = -1;
         children = nlcst.children;
+        nodes = [];
 
         while (children[++index]) {
-            node.append(nlcstToTextOM(TextOM, children[index]));
+            nodes[index] = nlcstToTextOM(TextOM, children[index]);
         }
+
+        node.appendAll(nodes);
     } else {
         node.fromString(nlcst.value);
     }
