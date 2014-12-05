@@ -1,4 +1,14 @@
 
+n.n.n / 2014-12-05
+==================
+
+ * Refactor npm script targets in `package.json`
+ * Add link to personal website to copyright in `Readme.md`
+ * Fix incorrect executive rights on `test.js`
+ * Update useage example for changes in retext-inspect, textom
+ * Update textom for new performance-improvements
+ * Update eslint
+
 0.1.0 / 2014-11-05
 ==================
 
