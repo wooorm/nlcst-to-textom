@@ -5,23 +5,26 @@ Transform an [NLCST](https://github.com/wooorm/nlcst) node into a [TextOM](https
 ## Installation
 
 npm:
-```sh
+
+```bash
 $ npm install nlcst-to-textom
 ```
 
 Component.js:
-```sh
+
+```bash
 $ component install wooorm/nlcst-to-textom
 ```
 
 Bower:
-```sh
+
+```bash
 $ bower install nlcst-to-textom
 ```
 
 ## Usage
 
-````js
+```javascript
 var TextOMConstructor,
     nlcstToTextOM,
     inspect,
@@ -66,7 +69,7 @@ console.log(nlcstToTextOM(TextOM, {
  * ├─ PunctuationNode: '&'
  * └─ TextNode: 'T'
  */
-````
+```
 
 ## Related
 
