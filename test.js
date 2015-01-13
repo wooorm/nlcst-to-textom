@@ -1,6 +1,6 @@
 'use strict';
 
-/**
+/*
  * Dependencies.
  */
 
@@ -12,7 +12,7 @@ nlcstToTextOM = require('./');
 TextOMConstructor = require('textom');
 assert = require('assert');
 
-/**
+/*
  * Constants.
  */
 
@@ -20,7 +20,7 @@ var TextOM;
 
 TextOM = new TextOMConstructor();
 
-/**
+/*
  * Fixtures.
  */
 
@@ -30,7 +30,7 @@ types = Object.keys(TextOM).filter(function (key) {
     return key.toUpperCase() !== key && key.indexOf('Node') > 0;
 });
 
-/**
+/*
  * Tests.
  */
 
@@ -125,6 +125,11 @@ describe('nlcstToTextOM(textom, nlcst)', function () {
     it('should NOT set inherited data properties', function () {
         var result;
 
+        /**
+         * Example custom node.
+         *
+         * @constructor Data
+         */
         function Data() {}
 
         Data.prototype.test = 'test';

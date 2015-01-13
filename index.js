@@ -1,6 +1,6 @@
 'use strict';
 
-/**
+/*
  * Constants.
  */
 
@@ -17,7 +17,6 @@ has = Object.prototype.hasOwnProperty;
  * @return {Node} From `nlcst` and `TextOM` constructed
  *   node.
  */
-
 function nlcstToTextOM(TextOM, nlcst) {
     var index,
         node,
