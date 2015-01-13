@@ -4,19 +4,19 @@ Transform an [NLCST](https://github.com/wooorm/nlcst) node into a [TextOM](https
 
 ## Installation
 
-npm:
+[npm](https://docs.npmjs.com/cli/install):
 
 ```bash
 $ npm install nlcst-to-textom
 ```
 
-Component.js:
+[Component.js](https://github.com/componentjs/component):
 
 ```bash
 $ component install wooorm/nlcst-to-textom
 ```
 
-Bower:
+[Bower](http://bower.io/#install-packages):
 
 ```bash
 $ bower install nlcst-to-textom
@@ -63,7 +63,7 @@ console.log(nlcstToTextOM(TextOM, {
     }
   ]
 }));
-/**
+/*
  * WordNode[3] [data={"partOfSpeech":["NNP","NN"]}]
  * ├─ TextNode: 'AT'
  * ├─ PunctuationNode: '&'
