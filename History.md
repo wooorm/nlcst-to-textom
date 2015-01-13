@@ -1,4 +1,19 @@
 
+n.n.n / 2015-01-13
+==================
+
+  * Update copyright notice in `LICENSE` to include 2015
+  * Add link to whole license in `Readme.md`
+  * Add Duo as an instalation method in `Readme.md`
+  * Add links to installation methods in `Readme.md`
+  * Refactor fences code blocks in `Readme.md`
+  * Refactor to adhere to strict jsdoc style
+  * Add jscs-jsdoc configuration to `.jscs.json`
+  * Add jscs-jsdoc as a dev-dependency
+  * Refactor npm scripts for changes in npm
+  * Update eslint
+  * Update textom
+
 0.2.0 / 2014-12-05
 ==================
 
