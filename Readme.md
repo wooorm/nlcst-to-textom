@@ -22,6 +22,12 @@ $ component install wooorm/nlcst-to-textom
 $ bower install nlcst-to-textom
 ```
 
+[Duo](http://duojs.org/#getting-started):
+
+```javascript
+var nlcstToTextOM = require('wooorm/nlcst-to-textom');
+```
+
 ## Usage
 
 ```javascript
