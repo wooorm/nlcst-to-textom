@@ -1,36 +1,5 @@
 {
   "name": "nlcst-to-textom",
-  "version": "0.2.1",
-  "description": "Transform an NLCST node into a TextOM node",
-  "license": "MIT",
-  "keywords": [
-    "nlcst",
-    "to",
-    "textom"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/nlcst-to-textom.git"
-  },
-  "author": "Titus Wormer <tituswormer@gmail.com>",
-  "devDependencies": {
-    "eslint": "^0.11.0",
-    "istanbul": "^0.3.0",
-    "jscs": "^1.0.0",
-    "jscs-jsdoc": "^0.4.0",
-    "mocha": "^2.0.0",
-    "textom": "^0.4.0"
-  },
-  "scripts": {
-    "test-api": "_mocha --check-leaks test.js",
-    "test-coveralls": "istanbul cover _mocha --report lcovonly -- --check-leaks test.js",
-    "test-coverage": "istanbul cover _mocha -- --check-leaks test.js",
-    "test-travis": "npm run test-coveralls",
-    "test": "npm run test-api",
-    "lint-api": "eslint index.js",
-    "lint-test": "eslint --env mocha test.js",
-    "lint-style": "jscs --reporter inline index.js test.js",
-    "lint": "npm run lint-api && npm run lint-test && npm run lint-style",
-    "make": "npm run lint && npm run test-coverage"
-  }
+  "version": "0.3.0",
+  "description": "Deprecated".
 }
